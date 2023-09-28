@@ -1,7 +1,7 @@
 import React from "react";
 
 const Star = () => {
-  return <img src="/images/icon-star.svg" />;
+  return <img src="/images/icon-star.svg" alt="Star Icon"/>;
 };
 const stars = (
   <span className="stars">

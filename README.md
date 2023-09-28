@@ -71,8 +71,8 @@ Also I seem to have forgotten how to use loops so I will be revisiting that! Ano
 
 ### Useful resources
 
-- [Example resource 1](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position) - This helped me for backgroun properties.
-- [Example resource 2](https://courses.kevinpowell.co/view/courses/conquering-responsive-layouts/) - Helpful resource to learn responsiveness that I have began and may help someone.
+- [Resource 1](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position) - This helped me for background properties.
+- [Resource 2](https://courses.kevinpowell.co/view/courses/conquering-responsive-layouts/) - Helpful resource to learn responsiveness that I have began and may help someone.
 
 ## Author
 

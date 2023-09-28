@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+/* ## Layout  - Mobile: 375px - Desktop: 1440px */
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: rgb(238, 104, 164);
+
+  /* ### Neutral */
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+
+  /* ## Typography */
+  --font-body: 15px;
+  --font-league: "League Spartan", sans-serif;
+  --bold-400: 400;
+  --bold-500: 500;
+  --bold-700: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 15px;
+  font-family: var(--font-league);
+  background-image: url(../public/images/bg-pattern-top-mobile.svg),
+    url(../public/images/bg-pattern-bottom-mobile.svg);
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+  background-color: var(--white);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1130px; /* a desktop */
+  padding: 50px 26px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* cta section */
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  max-width: 410px;
+  text-align: center;
+  color: var(--very-dark-magenta);
+}
+
+.cta > h1 {
+  font-size: 48px;
+  padding-bottom: 2rem;
+}
+
+.cta > p {
+  line-height: 1.8;
+  padding-bottom: 2rem;
+  font-weight: var(--bold-500);
+}
+
+/* review section */
+
+.reviews {
+  max-width: 530px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.reviews > .review {
+  background-color: var(--light-grayish-magenta);
+  color: var(--very-dark-magenta);
+  font-weight: var(--bold-700);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.reviews > .review:nth-child(1) {
+  align-self: flex-start;
+}
+.reviews > .review:nth-child(2) {
+  align-self: center;
+}
+
+.reviews > .review:nth-child(3) {
+  align-self: flex-end;
+}
+
+.reviews > .review > .stars > img {
+  margin: 0 2.5px;
+}
+
+/* testimonial ection  */
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: var(--light-grayish-magenta);
+}
+
+.testimonials > .testimonial {
+  max-width: 340px;
+  padding: 2rem;
+  background-color: var(--very-dark-magenta);
+  border-radius: 0.5rem;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+}
+
+.testimonials > .testimonial > .user {
+  display: flex;
+  align-items: center;
+  line-height: 1.2;
+  padding-bottom: 2rem;
+}
+.testimonials > .testimonial > .user > img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+
+.testimonials > .testimonial > .user .client {
+  color: var(--soft-pink);
+}
+
+.testimonials > .testimonial .msg {
+  line-height: 1.6;
+}
+
+/* media querie for desktop layout max-1440px  */
+@media (min-width: 850px) {
+  body {
+    background-image: url(/images/bg-pattern-top-desktop.svg),
+      url(/images/bg-pattern-bottom-desktop.svg);
+  }
+  .container {
+    max-width: 1116px;
+    padding: 26px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* cta section dsektop */
+
+  .cta {
+    text-align: left;
+  }
+
+  /* review section desktop  */
+  .reviews {
+    width: 530px;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .reviews > .review {
+    background-color: var(--light-grayish-magenta);
+    color: var(--very-dark-magenta);
+    font-weight: var(--bold-700);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 100%; */
+    max-width: 450px;
+    /* width: 100%; */
+    padding: 1.2rem;
+    border-radius: 10px;
+  }
+
+  /* testimonials section desktop */
+  .testimonials {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: var(--light-grayish-magenta);
+  }
+  .testimonials > .testimonial:nth-child(1) {
+    justify-content: flex-start;
+    margin-top: 2rem;
+  }
+
+  .testimonials > .testimonial:nth-child(2) {
+    margin-top: 4rem;
+  }
+
+  .testimonials > .testimonial:nth-child(3) {
+    margin-top: 6rem;
+  }
+}

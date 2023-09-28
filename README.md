@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/profile/moncadad)
+- Live Site URL: [Live](https://tubular-gnome-0347c5.netlify.app/)
 
 ## My process
 

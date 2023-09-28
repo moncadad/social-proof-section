@@ -57,7 +57,7 @@ body {
 }
 
 .cta > h1 {
-  font-size: 48px;
+  font-size: 56px;
   padding-bottom: 2rem;
 }
 
@@ -112,6 +112,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  font-weigt: var(--bold-500);
   color: var(--light-grayish-magenta);
 }
 
